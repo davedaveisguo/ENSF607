@@ -22,9 +22,6 @@ public class Course {
 	public void addOffering(CourseOffering theOffering) {
 		offeringList.add(theOffering);
 	}
-	
-	
-
 
 
 	public ArrayList<Course> getPreReq() {

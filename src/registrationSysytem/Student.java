@@ -1,12 +1,14 @@
 package registrationSysytem;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Student {
 	
 	private String studentName;
 	private int studentId;
 	private ArrayList<Registration> courseList;
+	private Scanner scan = new Scanner(System.in);
 	
 	
 	
@@ -40,6 +42,7 @@ public class Student {
 					System.out.println("Do not meet pre-requisites.");
 				} else {
 					Registration reg = new Registration(this, theOffering);
+					
 				}
 			}
 			

@@ -56,6 +56,15 @@ public class FrontEnd {
 		}
 	}
 	
+	private void checkCourseRunnable() {
+		System.out.println("Please enter course name:\n");
+		String courseName = scan.next();
+		System.out.println("Enter course number:\n");
+		int courseNum = scan.nextInt();
+		Course foundCourse = cat.searchCat(courseName, courseNum);
+		foundCourse.getOfferingList();
+	}
+	
 	
 	private void searchCat() {
 		System.out.println("Please enter course name:\n");
@@ -83,6 +92,7 @@ public class FrontEnd {
 		int sectionNum = scan.nextInt();
 
 		userStudent.registerForCourse(cat, courseName, courseNum, sectionNum);
+		
 	}
 	
 	private Student searchForStudent() {

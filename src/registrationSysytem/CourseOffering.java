@@ -78,13 +78,17 @@ public class CourseOffering {
 	}
 	
 	
+	public String getCourseRunnable() {
+	  return this.getStudentList().size()>=8? "Course is Runnable":  "Not Enough student in the course";
+	}
 
 
 
-
-
-
-
+	@Override
+	public String toString() {
+		return getCourseRunnable();
+	}
+	
 
 	
 	
